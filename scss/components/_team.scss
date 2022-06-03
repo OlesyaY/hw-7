@@ -1,0 +1,74 @@
+.list-intro {
+    display: flex;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.list-intro .link-intro {
+    width: 270px;
+    text-align: center;
+}
+
+.link-intro {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+}
+
+.list-intro .link-intro:not(:last-child) {
+    margin-right: 30px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0px;
+}
+
+.socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: var(--secondary-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-icon {
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--accent-color);
+}
+
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+    fill: #ffffff;
+}
+.list-name {
+    font-weight: 500;
+    line-height: 1.18;
+    margin-bottom: 10px;
+}
+.position {
+    font-size: 16px;
+    line-height: 1.35;
+    margin-bottom: 16px;
+}

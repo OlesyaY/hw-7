@@ -1,0 +1,31 @@
+.header-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.header-icon:hover,
+.header-icon:focus {
+    color: var(--accent-color);
+}
+
+.hedbord {
+    border-bottom: 1px solid #ececec;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.link {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.active {
+    color: var(--accent-color);
+}

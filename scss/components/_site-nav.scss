@@ -1,0 +1,81 @@
+.list {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.14;
+    padding-inline-start: 0;
+}
+
+.list .link {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list .link:hover,
+.list .link:focus,
+.address-content .list .link:hover,
+.address-content .list .link:focus,
+.top-contact .link:hover,
+.top-contact .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.top-contact {
+    display: flex;
+    margin-left: auto;
+}
+
+.top-contact .link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+}
+
+.top-contact .item + .item {
+    margin-left: 50px;
+}
+
+.address-content .list .list-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.site-contact {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.site-contact .link {
+    color: var(--secondary-color);
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .link {
+    display: block;
+}
+
+.site-nav .item .link {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.site-nav .item .link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+}

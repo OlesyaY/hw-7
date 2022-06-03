@@ -1,0 +1,116 @@
+.footer-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+}
+
+.address-content {
+    font-style: normal;
+}
+
+.address-content .address-text {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 9px;
+}
+
+.link-text {
+    color: #ffffff;
+}
+
+.info:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.join-caption {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.socials-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-inline-start: 0px;
+}
+
+.join .socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.join {
+    margin-left: 70px;
+}
+
+.join .socials-icon {
+    fill: #ffffff;
+}
+
+.join .socials-link:hover,
+.join .socials-link:focus {
+    background-color: var(--accent-color);
+    fill: #ffffff;
+}
+
+.join .socials-link:hover .socials-icon,
+.join .socials-link:focus .socials-icon {
+    fill: #ffffff;
+}
+
+.footer-submit {
+    margin-left: 93px;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.87;
+    font-family: inherit;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 29px;
+    border: unset;
+}
+
+.footer-icon {
+    margin-left: 10px;
+    fill: #ffffff;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.fotter-mail {
+    width: 358px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+    background-color: transparent;
+}
