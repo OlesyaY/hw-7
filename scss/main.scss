@@ -1,4 +1,8 @@
-@import "./utils/vars";
+@import "./utils/variables";
+
+@import "./common";
+@import "./reset";
+
 @import "./components/benefits";
 @import "./components/servise";
 @import "./components/clients";
@@ -6,7 +10,8 @@
 @import "./components/footer";
 @import "./components/main-section";
 @import "./components/team";
-@import "./components/portfolio";
+@import "./components/project-list";
+@import "./components/filter";
 @import "./components/logo";
 @import "./components/header";
 @import "./components/site-nav";

@@ -3,43 +3,11 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-p,
-h1,
-h2,
-h3,
-ul {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-}
-
-
 .conteiner {
     width: 1200px;
     padding: 0px 15px;
     margin: 0 auto;
 }
-
-ul {
-    list-style: none;
-}
-
-
-/*  Змінні */
-
-.accent-text {
-    color: var(--accent-color);
-}
-
-.secondary-text {
-    color: var(--secondary-color);
-}
-
-
-
-
-
-
-
 
 .caption {
     font-weight: 700;
@@ -49,32 +17,23 @@ ul {
     margin-block-start: 0;
     margin-block-end: 0;
     margin-bottom: 50px;
-
 }
 
-
-
-
-/* ?  */
 .text {
     line-height: 1.87;
 }
 
-
-/* ? */
 .description {
     line-height: 1.71;
     font-size: 14px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.btn {
+    padding: 6px 22px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    font-family: inherit;
+    border: unset;
+}
