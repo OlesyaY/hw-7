@@ -56,6 +56,9 @@
     border-radius: 50%;
     color: #ffffff;
 }
+.join .socials-item:not(:last-child) {
+    margin-right: 10px;
+}
 
 .join {
     margin-left: 70px;
