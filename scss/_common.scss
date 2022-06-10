@@ -7,6 +7,14 @@ body {
     width: 1200px;
     padding: 0px 15px;
     margin: 0 auto;
+
+    &--centered {
+        display: flex;
+        align-items: center;
+    }
+    &__title--visually-hidden {
+        @include visually-hidden;
+    }
 }
 
 .caption {
@@ -36,4 +44,32 @@ body {
     line-height: 1.62;
     font-family: inherit;
     border: unset;
+}
+
+.list {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.14;
+    padding-inline-start: 0;
+
+    .link {
+        color: var(--main-color);
+        text-decoration: none;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .link:hover,
+    .link:focus {
+        color: var(--accent-color);
+    }
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.active {
+    color: var(--accent-color);
 }

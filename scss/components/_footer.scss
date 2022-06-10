@@ -1,3 +1,8 @@
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
 .footer-content {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -23,9 +28,14 @@
     margin-bottom: 9px;
 }
 
-.footer-container {
-    display: flex;
-    align-items: baseline;
+.logo {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
 }
 
 .join-caption {
@@ -116,4 +126,8 @@
     border-radius: 4px;
     outline: transparent;
     background-color: transparent;
+}
+
+.address-content .list .list-link {
+    color: rgba(255, 255, 255, 0.6);
 }

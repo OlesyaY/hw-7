@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,40 +20,46 @@
     </head>
     <body>
         <header class="hedbord">
-            <div class="conteiner page-header">
-                <nav class="site-nav">
-                    <a class="link link-logo" href="/hm-2/index.html"
+            <div class="conteiner conteiner--centered">
+                <nav class="hedbord__site-nav list">
+                    <a class="hedbord__link-logo" href="/hm-2/index.html"
                         ><span class="accent-text">Web</span>Studio</a
                     >
-                    <ul class="list font-medium site-nav">
+                    <ul class="list font-medium hedbord__site-nav">
                         <li class="item">
-                            <a href="index.html" class="link">Студия</a>
+                            <a href="index.html" class="link active">Студия</a>
                         </li>
                         <li class="item">
-                            <a href="portfolio.html" class="link active"
-                                >Портфолио</a
-                            >
+                            <a href="portfolio.html" class="link">Портфолио</a>
                         </li>
                         <li class="item">
                             <a href="" class="link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="top-contact site-contact list font-medium">
+                <ul class="hedbord__list list font-medium">
                     <li class="item">
                         <a
                             href="mailto:info@devstudio.com"
-                            class="link secondary-text header-link"
+                            class="link secondary-text"
                         >
-                            <svg class="header-icon" width="16" height="12">
+                            <svg
+                                class="hedbord__header-icon"
+                                width="16"
+                                height="12"
+                            >
                                 <use href="./images/icons.svg#mail"></use>
                             </svg>
                             info@devstudio.com</a
                         >
                     </li>
                     <li class="item">
-                        <a href="tel:+380961111111" class="link header-link"
-                            ><svg class="header-icon" width="10" height="16">
+                        <a href="tel:+380961111111" class="link"
+                            ><svg
+                                class="hedbord__header-icon"
+                                width="10"
+                                height="16"
+                            >
                                 <use href="./images/icons.svg#phone"></use>
                             </svg>
                             +38 096 111 11 11
@@ -65,7 +71,11 @@
         <main>
             <section class="catalog">
                 <div class="conteiner">
-                    <h1 class="visually-hidden">Резюме</h1>
+                    <h1
+                        class="conteiner__title conteiner__title--visually-hidden"
+                    >
+                        Резюме
+                    </h1>
                     <ul class="catalog__list">
                         <li class="catalog__item">
                             <button
