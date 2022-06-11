@@ -1,75 +1,85 @@
-.hedbord {
-    border-bottom: 1px solid #ececec;
+.headbord {
+  border-bottom: 1px solid #ececec;
 
-    &__site-nav .item:not(:last-child) {
-        margin-right: 40px;
-    }
+  &__nav {
+    @extend %link;
+    display: flex;
+    align-items: center;
+  }
 
-    &__site-nav {
-        display: flex;
-        align-items: center;
+  &__logo {
+    color: var(--main-color);
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    font-family: Raleway, sans-serif;
+  }
+}
 
-        .link {
-            display: block;
-            position: relative;
-            padding-top: 32px;
-            padding-bottom: 32px;
-        }
-    }
+.menu {
+  @extend %list;
+  display: flex;
 
-    &__list {
-        display: flex;
-        margin-left: auto;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
 
-        .link {
-            color: var(--secondary-color);
-            display: flex;
-            padding-top: 32px;
-            padding-bottom: 32px;
-            align-items: center;
-        }
-    }
+  &__link {
+    @extend %link;
+    display: block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
-    &__header-icon {
-        fill: currentColor;
-        margin-right: 10px;
-    }
+  &__link--active {
+    color: var(--accent-color);
+  }
 
-    &__list .item + .item {
-        margin-left: 50px;
-    }
+  &__link--active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
 
-    &__header-icon:hover,
-    &__header-icon:focus {
-        color: var(--accent-color);
-    }
+.contact-list {
+  @extend %list;
+  display: flex;
+  margin-left: auto;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 
-    &__link-logo {
-        color: var(--main-color);
-        text-decoration: none;
-        padding-top: 24px;
-        padding-bottom: 25px;
-        margin-right: 93px;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 1.19;
-        font-family: Raleway, sans-serif;
-    }
-    .hedbord__site-nav .item .link.active::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        height: 4px;
-        background: #2196f3;
-        border-radius: 2px;
-    }
+  &__link {
+    @extend %link;
+    color: var(--secondary-color);
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+  }
 
-    .active {
-        color: var(--accent-color);
-    }
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    color: var(--accent-color);
+  }
 }

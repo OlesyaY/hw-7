@@ -3,20 +3,6 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-.conteiner {
-    width: 1200px;
-    padding: 0px 15px;
-    margin: 0 auto;
-
-    &--centered {
-        display: flex;
-        align-items: center;
-    }
-    &__title--visually-hidden {
-        @include visually-hidden;
-    }
-}
-
 .caption {
     font-weight: 700;
     font-size: 36px;
@@ -73,3 +59,4 @@ body {
 .active {
     color: var(--accent-color);
 }
+
